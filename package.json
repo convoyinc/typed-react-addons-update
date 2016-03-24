@@ -1,0 +1,19 @@
+{
+  "private": true,
+  "scripts": {
+    "watch": "onchange '**/*.d.ts' -e 'out/**' -- npm run build",
+    "build": "typings bundle -o out",
+    "test": "ts-node test/test.ts",
+    "postinstall": "typings install"
+  },
+  "devDependencies": {
+    "blue-tape": "^0.2.0",
+    "onchange": "^2.1.2",
+    "react-addons-update": "0.14.7",
+    "ts-node": "^0.7.0",
+    "tslint": "git+https://github.com/unional/tslint.git",
+    "tslint-config-typings": "^0.1.2",
+    "typescript": "^1.8.9",
+    "typings": "^0.7.9"
+  }
+}
