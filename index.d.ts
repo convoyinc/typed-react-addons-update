@@ -13,7 +13,7 @@ declare module update {
   type ObjectSpec = ObjectCommand | SpecPath;
 }
 
-declare function update(value:any[], spec: update.ArrayCommand): any[];
-declare function update(value:{}, spec: update.ObjectSpec): {};
+declare function update<T>(value:T[], spec: update.ArrayCommand): T[];
+declare function update<T>(value:T, spec: update.ObjectSpec): T;
 
 export = update;
